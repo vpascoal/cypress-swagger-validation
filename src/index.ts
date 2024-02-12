@@ -3,7 +3,8 @@ import * as Parser from 'json-schema-ref-parser';
 import * as JsonPath from 'jsonpath';
 import Logger from './logger';
 import * as Models from './models';
-import Ajv, {ErrorObject} from "ajv"
+import Ajv, {ErrorObject} from "ajv";
+import addFormats from "ajv-formats";
 
 const defaultLog = new Logger('cypress-swagger-validation');
 
@@ -70,6 +71,8 @@ export function SwaggerValidation(config: object) {
 				strictSchema: false,
 			})
 
+			addFormats(ajv)
+			
 			if (verbose) {
 				log.debug('Endpoint:', options.endpoint);
 				log.debug('Response Schema:', JSON.stringify(options.responseSchema, null, 2));
