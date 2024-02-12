@@ -2,9 +2,9 @@
 
 Validate your request responses against Swagger JSON Endpoints. AKA Contract Testing.
 
-[![npm (scoped)](https://img.shields.io/npm/v/@jc21/cypress-swagger-validation.svg?style=for-the-badge)](https://www.npmjs.com/package/@jc21/cypress-swagger-validation)
-[![npm (types)](https://img.shields.io/npm/types/@jc21/cypress-swagger-validation.svg?style=for-the-badge)](https://www.npmjs.com/package/@jc21/cypress-swagger-validation)
-[![npm (licence)](https://img.shields.io/npm/l/@jc21/cypress-swagger-validation.svg?style=for-the-badge)](https://www.npmjs.com/package/@jc21/cypress-swagger-validation)
+[![npm (scoped)](https://img.shields.io/npm/v/@vpascoal/cypress-swagger-validation.svg?style=for-the-badge)](https://www.npmjs.com/package/@vpascoal/cypress-swagger-validation)
+[![npm (types)](https://img.shields.io/npm/types/@vpascoal/cypress-swagger-validation.svg?style=for-the-badge)](https://www.npmjs.com/package/@vpascoal/cypress-swagger-validation)
+[![npm (licence)](https://img.shields.io/npm/l/@vpascoal/cypress-swagger-validation.svg?style=for-the-badge)](https://www.npmjs.com/package/@vpascoal/cypress-swagger-validation)
 
 Do you use Cypress to perform API endpoint testing? Do you have Swagger/Openapi v3 schema?
 This is the plugin for you.
@@ -17,12 +17,12 @@ Your swagger doc will need endpoints with content schema defined.
 ### Cypress Installation
 
 ```bash
-yarn add @jc21/cypress-swagger-validation
+yarn add @vpascoal/cypress-swagger-validation
 ```
 
 Then in your cypress Plugins file:
 ```javascript
-const {SwaggerValidation} = require('@jc21/cypress-swagger-validation');
+const {SwaggerValidation} = require('@vpascoal/cypress-swagger-validation');
 
 module.exports = (on, config) => {
     // ...
